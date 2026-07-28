@@ -89,24 +89,10 @@ Y obtener respuestas inmediatas en lenguaje natural.
   ├── README.md # Este archivo
   ├── requirements.txt # Dependencias del proyecto
   ├── runtime.txt # Versión de Python para Render opcional, render lo carga automaticamente
-  │
   ├── app.py # Aplicación Streamlit principal
   ├── agente.py # Lógica del agente de IA
-  ├── procesador.py # Procesamiento de documentos
-  ├── utils.py # Funciones utilitarias
-  │
-  ├── data/ # Datos del proyecto
-  │ ├── datos_entregas.csv # Dataset de entregas
-  │ └── resumen_dataset.csv # Resumen estadístico
-  │
-  ├── figuras/ # Visualizaciones generadas
-  │ ├── tiempos_entrega.png
-  │ ├── experiencia_rendimiento.png
-  │ ├── analisis_temporal.png
-  │ └── analisis_geografico.png
-  │
-  └── notebooks/ # Notebooks de exploración
-  └── exploracion.ipynb
+  ├── datos_entregas.csv # Dataset de entregas
+  └── herramientas.py
 
 ```
 
