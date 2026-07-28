@@ -138,7 +138,7 @@ Configurar variables de entorno
 
 ```
 
-# Crear archivo .env y agregar tu API key
+## Crear archivo .env y agregar tu API key
 
 ```
 echo "API_KEY=tu-api-key-aqui" > .env
