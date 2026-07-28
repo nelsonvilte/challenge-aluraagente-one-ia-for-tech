@@ -110,7 +110,7 @@ proyecto-agente-ia/
 
 ### Requisitos Previos
 - Python 3.11 o superior instalado
-- Cuenta de Qroq (para obtener tu API key)
+- Cuenta de Groq (para obtener tu API key)
 - Git (opcional, para clonar el repositorio)
 
 ### Pasos para Instalación
@@ -169,3 +169,141 @@ streamlit run app.py
 ## Abrir en el navegador
 
 Ve a http://localhost:8501
+
+## 🚀 Despliegue en Render
+
+## Paso 1: Preparar el Código
+
+Asegúrate de tener los siguientes archivos en la raíz del proyecto:
+
+✅ app.py - Aplicación principal
+✅ requirements.txt - Dependencias
+✅ Procfile - Comando de inicio
+✅ runtime.txt - Versión de Python
+
+Contenido del Procfile:
+
+```
+web: streamlit run app.py --server.port=$PORT --server.address=0.0.0.0 --server.headless=true
+
+```
+
+## Paso 2: Subir a GitHub
+
+✅  Crea un repositorio en GitHub (público o privado)
+
+✅  Sube todos los archivos del proyecto
+
+## Paso 3: Desplegar en Render
+
+Crear cuenta en Render (es gratis, puedes usar GitHub)
+
+Crear un nuevo Web Service:
+
+Haz clic en "New +" → "Web Service"
+
+Conecta tu repositorio de GitHub
+
+Selecciona el repositorio proyecto-agente-ia
+
+Configuración del servicio:
+
+Name: agente-ia-entregas (o el nombre que quieras)
+
+Branch: main
+
+Runtime: Python 3
+
+Build Command: pip install -r requirements.txt
+
+Start Command: El Procfile se usará automáticamente
+
+Configurar variables de entorno:
+
+Ve a la sección "Environment Variables"
+
+Agrega:
+
+Key: API_KEY
+
+Value: sk-... (tu clave)
+
+Haz clic en "Add Environment Variable"
+
+Crear el servicio:
+
+Haz clic en "Create Web Service"
+
+Espera de 3 a 5 minutos mientras Render construye y despliega tu app
+
+Acceder a tu aplicación:
+
+Una vez completado, verás la URL
+
+💻 Uso de la Aplicación
+1. Configuración Inicial
+Carga el dataset: Haz clic en "📂 Cargar Dataset" en la barra lateral.
+
+Configura tu API key: Ingresa tu OpenAI API key en la barra lateral.
+
+Espera la inicialización: El agente se cargará automáticamente.
+
+2. Pestaña "💬 Chat con Agente"
+Haz preguntas en lenguaje natural:
+
+Ejemplos de preguntas:
+
+"¿Cuál es el tiempo promedio de entrega?"
+
+"¿Qué categoría de producto tiene más entregas?"
+
+"¿Cómo afecta el clima al tiempo de entrega?"
+
+"¿Cuál es el mejor día para hacer entregas?"
+
+"¿Qué colaboradores tienen mejor rendimiento?"
+
+3. Pestaña "📊 Análisis de Datos"
+Visualiza estadísticas y distribuciones:
+
+Métricas clave (total entregas, tiempo promedio, etc.)
+
+Distribución por categoría de producto
+
+Distribución por clima
+
+Nivel de tráfico y experiencia de colaboradores
+
+4. Pestaña "📈 Visualizaciones"
+Selecciona entre diferentes tipos de visualización:
+
+Tiempo de entrega por categoría
+
+Evolución temporal de entregas
+
+Relación experiencia vs tiempo
+
+Mapa de calor de correlaciones
+
+Distribución de tiempos
+
+5. Pestaña "🗃️ Datos"
+Explora los datos sin procesar:
+
+Selecciona columnas específicas
+
+Ajusta el número de filas a mostrar
+
+Descarga el dataset en CSV con los filtros aplicados
+
+6. Pestaña "📝 Reportes"
+Genera reportes automáticos:
+
+Resumen Ejecutivo: Métricas clave y distribuciones
+
+Análisis de Rendimiento: Evaluación de colaboradores y condiciones
+
+Tendencias Temporales: Patrones diarios y por hora
+
+Análisis de Factores: Impacto de clima y tráfico
+
