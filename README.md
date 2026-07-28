@@ -1,2 +1,10 @@
-# 2215-langchain-automatizando-el-analisis-de-datos-con-agentes
-Este repositorio corresponde al entrenamiento de LangChain: Automatizando el análisis de datos de Alura Latam.
+# Challenge Alura Agente 
+
+## Agente IA para Análisis de Entregas
+
+## 📋 Tabla de Contenidos
+
+- [Descripción del Proyecto](#-descripción-del-proyecto)
+- [Características](#-características)
+- [Tecnologías Utilizadas](#-tecnologías-utilizadas)
+- [Estructura del Proyecto](#-estructura-del-proyecto)
