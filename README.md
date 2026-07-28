@@ -250,7 +250,8 @@ Acceder a tu aplicación:
 
 Una vez completado, verás la URL
 
-💻 Uso de la Aplicación
+## 💻 Uso de la Aplicación
+
 1. Configuración Inicial
 Carga el dataset: Haz clic en "📂 Cargar Dataset" en la barra lateral.
 
@@ -274,15 +275,15 @@ Ejemplos de preguntas:
 "¿Qué colaboradores tienen mejor rendimiento?"
 
 3. Pestaña "📊 Análisis de Datos"
-Visualiza estadísticas y distribuciones:
+- Visualiza estadísticas y distribuciones:
 
-Métricas clave (total entregas, tiempo promedio, etc.)
+- Métricas clave (total entregas, tiempo promedio, etc.)
 
-Distribución por categoría de producto
+- Distribución por categoría de producto
 
-Distribución por clima
+- Distribución por clima
 
-Nivel de tráfico y experiencia de colaboradores
+- Nivel de tráfico y experiencia de colaboradores
 
 4. Pestaña "📈 Visualizaciones"
 Selecciona entre diferentes tipos de visualización:
@@ -386,10 +387,13 @@ Tendencias Temporales: Patrones diarios y por hora
 Análisis de Factores: Impacto de clima y tráfico
 
 ## 🔐 Variables de Entorno
+```
 Variable	Descripción	Obligatoria	Ejemplo
-OPENAI_API_KEY	API key de OpenAI para el modelo GPT	✅ Sí	sk-...
-MODEL_NAME	Modelo de OpenAI a utilizar	❌ No	gpt-3.5-turbo
+API_KEY	API key para el modelo 	✅ Sí	sk-...
+MODEL_NAME	Modelo a utilizar	❌ No	gpt-3.5-turbo
 TEMPERATURE	Temperatura del modelo (0-1)	❌ No	0.1
 MAX_TOKENS	Máximo de tokens en respuesta	❌ No	1000
+
+```
 
 
