@@ -8,6 +8,10 @@
 - [Características](#-características)
 - [Tecnologías Utilizadas](#-tecnologías-utilizadas)
 - [Estructura del Proyecto](#-estructura-del-proyecto)
+- [Instalación y Configuración Local](#-instalación-y-configuración-local)
+- [Despliegue en Render](#-despliegue-en-render)
+- [Uso de la Aplicación](#-uso-de-la-aplicación)
+- [Variables de Entorno](#-variables-de-entorno)
 
 
 ## 🎯 Descripción del Proyecto
@@ -84,7 +88,7 @@ Y obtener respuestas inmediatas en lenguaje natural.
   ├── Procfile # Comando de inicio para Render opcional, puedes cargarlo directamente
   ├── README.md # Este archivo
   ├── requirements.txt # Dependencias del proyecto
-  ├── runtime.txt # Versión de Python para Render
+  ├── runtime.txt # Versión de Python para Render opcional, render lo carga automaticamente
   │
   ├── app.py # Aplicación Streamlit principal
   ├── agente.py # Lógica del agente de IA
@@ -178,9 +182,13 @@ Ve a http://localhost:8501
 
 Asegúrate de tener los siguientes archivos en la raíz del proyecto:
 
+
 ✅ app.py - Aplicación principal
+
 ✅ requirements.txt - Dependencias
+
 ✅ Procfile - Comando de inicio
+
 ✅ runtime.txt - Versión de Python
 
 Contenido del Procfile:
@@ -308,4 +316,80 @@ Análisis de Rendimiento: Evaluación de colaboradores y condiciones
 Tendencias Temporales: Patrones diarios y por hora
 
 Análisis de Factores: Impacto de clima y tráfico
+
+## 💻 Uso de la Aplicación
+
+1. Configuración Inicial
+Carga el dataset: Haz clic en "📂 Cargar Dataset" en la barra lateral.
+
+Configura tu API key: Ingresa tu OpenAI API key en la barra lateral.
+
+Espera la inicialización: El agente se cargará automáticamente.
+
+2. Pestaña "💬 Chat con Agente"
+Haz preguntas en lenguaje natural:
+
+Ejemplos de preguntas:
+
+"¿Cuál es el tiempo promedio de entrega?"
+
+"¿Qué categoría de producto tiene más entregas?"
+
+"¿Cómo afecta el clima al tiempo de entrega?"
+
+"¿Cuál es el mejor día para hacer entregas?"
+
+"¿Qué colaboradores tienen mejor rendimiento?"
+
+3. Pestaña "📊 Análisis de Datos"
+Visualiza estadísticas y distribuciones:
+
+Métricas clave (total entregas, tiempo promedio, etc.)
+
+Distribución por categoría de producto
+
+Distribución por clima
+
+Nivel de tráfico y experiencia de colaboradores
+
+4. Pestaña "📈 Visualizaciones"
+Selecciona entre diferentes tipos de visualización:
+
+Tiempo de entrega por categoría
+
+Evolución temporal de entregas
+
+Relación experiencia vs tiempo
+
+Mapa de calor de correlaciones
+
+Distribución de tiempos
+
+5. Pestaña "🗃️ Datos"
+Explora los datos sin procesar:
+
+Selecciona columnas específicas
+
+Ajusta el número de filas a mostrar
+
+Descarga el dataset en CSV con los filtros aplicados
+
+6. Pestaña "📝 Reportes"
+Genera reportes automáticos:
+
+Resumen Ejecutivo: Métricas clave y distribuciones
+
+Análisis de Rendimiento: Evaluación de colaboradores y condiciones
+
+Tendencias Temporales: Patrones diarios y por hora
+
+Análisis de Factores: Impacto de clima y tráfico
+
+## 🔐 Variables de Entorno
+Variable	Descripción	Obligatoria	Ejemplo
+OPENAI_API_KEY	API key de OpenAI para el modelo GPT	✅ Sí	sk-...
+MODEL_NAME	Modelo de OpenAI a utilizar	❌ No	gpt-3.5-turbo
+TEMPERATURE	Temperatura del modelo (0-1)	❌ No	0.1
+MAX_TOKENS	Máximo de tokens en respuesta	❌ No	1000
+
 
