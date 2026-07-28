@@ -75,3 +75,75 @@ Y obtener respuestas inmediatas en lenguaje natural.
 ---
 
 ## 📁 Estructura del Proyecto
+
+proyecto-agente-ia/
+│
+├── .env # Variables de entorno (no subir a GitHub)
+├── .gitignore # Archivos ignorados por Git
+├── Procfile # Comando de inicio para Render
+├── README.md # Este archivo
+├── requirements.txt # Dependencias del proyecto
+├── runtime.txt # Versión de Python para Render
+│
+├── app.py # Aplicación Streamlit principal
+├── agente.py # Lógica del agente de IA
+├── procesador.py # Procesamiento de documentos
+├── utils.py # Funciones utilitarias
+│
+├── data/ # Datos del proyecto
+│ ├── datos_entregas.csv # Dataset de entregas
+│ └── resumen_dataset.csv # Resumen estadístico
+│
+├── figuras/ # Visualizaciones generadas
+│ ├── tiempos_entrega.png
+│ ├── experiencia_rendimiento.png
+│ ├── analisis_temporal.png
+│ └── analisis_geografico.png
+│
+└── notebooks/ # Notebooks de exploración
+└── exploracion.ipynb
+
+
+---
+
+## 🔧 Instalación y Configuración Local
+
+### Requisitos Previos
+- Python 3.11 o superior instalado
+- Cuenta de Qroq (para obtener tu API key)
+- Git (opcional, para clonar el repositorio)
+
+### Pasos para Instalación
+
+1. **Clonar el repositorio**
+```bash
+git clone https://github.com/tu-usuario/proyecto-agente-ia.git
+cd proyecto-agente-ia
+
+Crear y activar entorno virtual
+
+Windows:
+
+bash
+python -m venv venv
+venv\Scripts\activate
+macOS/Linux:
+
+bash
+python3 -m venv venv
+source venv/bin/activate
+
+Instalar dependencias
+
+bash
+pip install -r requirements.txt
+Configurar variables de entorno
+
+bash
+# Crear archivo .env y agregar tu API key
+echo "API_KEY=tu-api-key-aqui" > .env
+
+
+Descargar el dataset
+
+- Archivo datos_entregas.csv
