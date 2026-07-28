@@ -92,7 +92,7 @@ Y obtener respuestas inmediatas en lenguaje natural.
   ├── app.py # Aplicación Streamlit principal
   ├── agente.py # Lógica del agente de IA
   ├── datos_entregas.csv # Dataset de entregas
-  └── herramientas.py
+  └── herramientas.py # Herramienta de informaciones
 
 ```
 
