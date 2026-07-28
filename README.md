@@ -206,49 +206,33 @@ web: streamlit run app.py --server.port=$PORT --server.address=0.0.0.0 --server.
 
 ## Paso 3: Desplegar en Render
 
-Crear cuenta en Render (es gratis, puedes usar GitHub)
+1. Crear cuenta en Render (es gratis, puedes usar GitHub)
 
-Crear un nuevo Web Service:
+2. Crear un nuevo Web Service:
+    - Haz clic en "New +" → "Web Service"  
+    - Conecta tu repositorio de GitHub  
+    - Selecciona el repositorio proyecto-agente-ia
 
-Haz clic en "New +" → "Web Service"
+3. Configuración del servicio:
+      - Name: agente-ia-entregas (o el nombre que quieras)
+      - Branch: main
+      - Runtime: Python 3
+      - Build Command: pip install -r requirements.txt
+      - Start Command: El Procfile se usará automáticamente
 
-Conecta tu repositorio de GitHub
+4. Configurar variables de entorno:
+- Ve a la sección "Environment Variables"
+- Agrega:
+    - Key: API_KEY
+    - Value: sk-... (tu clave)
+- Haz clic en "Add Environment Variable"
 
-Selecciona el repositorio proyecto-agente-ia
+5. Crear el servicio:
+    - Haz clic en "Create Web Service"
+    - Espera de 3 a 5 minutos mientras Render construye y despliega tu app
 
-Configuración del servicio:
-
-Name: agente-ia-entregas (o el nombre que quieras)
-
-Branch: main
-
-Runtime: Python 3
-
-Build Command: pip install -r requirements.txt
-
-Start Command: El Procfile se usará automáticamente
-
-Configurar variables de entorno:
-
-Ve a la sección "Environment Variables"
-
-Agrega:
-
-Key: API_KEY
-
-Value: sk-... (tu clave)
-
-Haz clic en "Add Environment Variable"
-
-Crear el servicio:
-
-Haz clic en "Create Web Service"
-
-Espera de 3 a 5 minutos mientras Render construye y despliega tu app
-
-Acceder a tu aplicación:
-
-Una vez completado, verás la URL
+6. Acceder a tu aplicación:
+   - Una vez completado, verás la URL
 
 ## 💻 Uso de la Aplicación
 
