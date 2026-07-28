@@ -320,38 +320,35 @@ Análisis de Factores: Impacto de clima y tráfico
 
 ## 💻 Uso de la Aplicación
 
-1. Configuración Inicial
+1.Configuración Inicial
 Carga el dataset: Haz clic en "📂 Cargar Dataset" en la barra lateral.
 
 Configura tu API key: Ingresa tu OpenAI API key en la barra lateral.
 
 Espera la inicialización: El agente se cargará automáticamente.
 
-2. Pestaña "💬 Chat con Agente"
+2.Pestaña "💬 Chat con Agente"
 Haz preguntas en lenguaje natural:
 
 Ejemplos de preguntas:
 
-"¿Cuál es el tiempo promedio de entrega?"
+-"¿Cuál es el tiempo promedio de entrega?"
 
-"¿Qué categoría de producto tiene más entregas?"
+-"¿Qué categoría de producto tiene más entregas?"
 
-"¿Cómo afecta el clima al tiempo de entrega?"
+-"¿Cómo afecta el clima al tiempo de entrega?"
 
-"¿Cuál es el mejor día para hacer entregas?"
+-"¿Cuál es el mejor día para hacer entregas?"
 
-"¿Qué colaboradores tienen mejor rendimiento?"
+-"¿Qué colaboradores tienen mejor rendimiento?"
 
-3. Pestaña "📊 Análisis de Datos"
-Visualiza estadísticas y distribuciones:
+3.Pestaña "📊 Análisis de Datos"
 
-Métricas clave (total entregas, tiempo promedio, etc.)
-
-Distribución por categoría de producto
-
-Distribución por clima
-
-Nivel de tráfico y experiencia de colaboradores
+- Visualiza estadísticas y distribuciones:
+- Métricas clave (total entregas, tiempo promedio, etc.)
+- Distribución por categoría de producto
+- Distribución por clima
+- Nivel de tráfico y experiencia de colaboradores
 
 4. Pestaña "📈 Visualizaciones"
 Selecciona entre diferentes tipos de visualización:
@@ -388,11 +385,12 @@ Análisis de Factores: Impacto de clima y tráfico
 
 ## 🔐 Variables de Entorno
 ```
-Variable	Descripción	Obligatoria	Ejemplo
-API_KEY	API key para el modelo 	✅ Sí	sk-...
-MODEL_NAME	Modelo a utilizar	❌ No	gpt-3.5-turbo
-TEMPERATURE	Temperatura del modelo (0-1)	❌ No	0.1
-MAX_TOKENS	Máximo de tokens en respuesta	❌ No	1000
+Variable	   Descripción	Obligatoria	      Ejemplo
+API_KEY	     API key para el modelo         ✅ Sí	sk-...
+MODEL_NAME	 Modelo a utilizar	            ❌ No	gpt-3.5-turbo
+TEMPERATURE	 Temperatura del modelo (0-1)	  ❌ No	0.1
+MAX_TOKENS	 Máximo de tokens en respuesta	❌ No	1000
+
 
 ```
 
