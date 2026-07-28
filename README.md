@@ -320,68 +320,51 @@ Análisis de Factores: Impacto de clima y tráfico
 
 ## 💻 Uso de la Aplicación
 
-1.Configuración Inicial
-Carga el dataset: Haz clic en "📂 Cargar Dataset" en la barra lateral.
+1. Configuración Inicial
+    - Carga el dataset: Haz clic en "📂 Cargar Dataset" en la barra lateral.
+    - Configura tu API key: Ingresa tu OpenAI API key en la barra lateral.
+    - Espera la inicialización: El agente se cargará automáticamente.
 
-Configura tu API key: Ingresa tu OpenAI API key en la barra lateral.
+2. Pestaña "💬 Chat con Agente"
 
-Espera la inicialización: El agente se cargará automáticamente.
+    Haz preguntas en lenguaje natural:
 
-2.Pestaña "💬 Chat con Agente"
-Haz preguntas en lenguaje natural:
+    Ejemplos de preguntas:
+      - "¿Cuál es el tiempo promedio de entrega?"
+      - "¿Qué categoría de producto tiene más entregas?"
+      - "¿Cómo afecta el clima al tiempo de entrega?"
+      - "¿Cuál es el mejor día para hacer entregas?"
+      - "¿Qué colaboradores tienen mejor rendimiento?"
 
-Ejemplos de preguntas:
+3. Pestaña "📊 Análisis de Datos"
 
--"¿Cuál es el tiempo promedio de entrega?"
-
--"¿Qué categoría de producto tiene más entregas?"
-
--"¿Cómo afecta el clima al tiempo de entrega?"
-
--"¿Cuál es el mejor día para hacer entregas?"
-
--"¿Qué colaboradores tienen mejor rendimiento?"
-
-3.Pestaña "📊 Análisis de Datos"
-
-- Visualiza estadísticas y distribuciones:
-- Métricas clave (total entregas, tiempo promedio, etc.)
-- Distribución por categoría de producto
-- Distribución por clima
-- Nivel de tráfico y experiencia de colaboradores
+    - Visualiza estadísticas y distribuciones:
+    - Métricas clave (total entregas, tiempo promedio, etc.)
+    - Distribución por categoría de producto
+    - Distribución por clima
+    - Nivel de tráfico y experiencia de colaboradores
 
 4. Pestaña "📈 Visualizaciones"
-Selecciona entre diferentes tipos de visualización:
 
-Tiempo de entrega por categoría
-
-Evolución temporal de entregas
-
-Relación experiencia vs tiempo
-
-Mapa de calor de correlaciones
-
-Distribución de tiempos
+   Selecciona entre diferentes tipos de visualización:
+    - Tiempo de entrega por categoría
+    - Evolución temporal de entregas
+    - Relación experiencia vs tiempo
+    - Mapa de calor de correlaciones
+    - Distribución de tiempos
 
 5. Pestaña "🗃️ Datos"
-Explora los datos sin procesar:
-
-Selecciona columnas específicas
-
-Ajusta el número de filas a mostrar
-
-Descarga el dataset en CSV con los filtros aplicados
+    - Explora los datos sin procesar:
+    - Selecciona columnas específicas
+    - Ajusta el número de filas a mostrar
+    - Descarga el dataset en CSV con los filtros aplicados
 
 6. Pestaña "📝 Reportes"
-Genera reportes automáticos:
-
-Resumen Ejecutivo: Métricas clave y distribuciones
-
-Análisis de Rendimiento: Evaluación de colaboradores y condiciones
-
-Tendencias Temporales: Patrones diarios y por hora
-
-Análisis de Factores: Impacto de clima y tráfico
+    - Genera reportes automáticos:
+    - Resumen Ejecutivo: Métricas clave y distribuciones
+    - Análisis de Rendimiento: Evaluación de colaboradores y condiciones
+    - Tendencias Temporales: Patrones diarios y por hora
+    - Análisis de Factores: Impacto de clima y tráfico
 
 ## 🔐 Variables de Entorno
 ```
