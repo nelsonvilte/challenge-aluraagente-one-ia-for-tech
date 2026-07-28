@@ -68,7 +68,7 @@ Y obtener respuestas inmediatas en lenguaje natural.
 | **Python** | 3.11.7 | Lenguaje de programación principal |
 | **Streamlit** | 1.43.0 | Framework para la interfaz web |
 | **LangChain** | 0.3.24 | Framework para construir agentes de IA |
-| **OpenAI** | 0.3.24 | Modelo GPT-3.5-turbo para procesamiento de lenguaje natural |
+| **Llama** | Llama-3.3-70b-versatile | Modelo para procesamiento de lenguaje natural |
 | **Pandas** | 2.2.2 | Manipulación y análisis de datos |
 | **Plotly** | 5.22.0 | Visualizaciones interactivas |
 | **Matplotlib** | 3.10.0 | Visualizaciones estáticas |
